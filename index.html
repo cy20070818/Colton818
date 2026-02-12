@@ -1,10 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>Hello World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>这是我的第一个 GitHub Pages 博客。</p>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MyBlog</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">🏠 首页</a></li>
+                <li><a href="about.html">📝 关于</a></li>
+                <li><a href="#posts">📚 文章</a></li>
+                <li><a href="#contact">📧 联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页内容 -->
+    <div class="container">
+        <header class="hero">
+            <h1>欢迎来到我的个人空间</h1>
+            <p>这里记录我的思考、学习和成长</p>
+            <a href="#posts" class="cta-button">查看文章</a>
+        </header>
+
+        <!-- 文章列表 -->
+        <section id="posts" class="posts-section">
+            <h2>📝 最新文章</h2>
+            
+            <div class="post-card">
+                <h3><a href="posts/post1.html">如何搭建个人博客</a></h3>
+                <p class="post-meta">发布于 2026年2月12日 | 📖 阅读时间：5分钟</p>
+                <p>详细讲解如何使用 GitHub Pages 搭建免费的个人博客，包含代码示例和部署步骤...</p>
+                <div class="tags">
+                    <span class="tag">技术</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">教程</span>
+                </div>
+                <a href="posts/post1.html" class="read-more">继续阅读 →</a>
+            </div>
+
+            <div class="post-card">
+                <h3><a href="posts/post2.html">前端学习路线指南</a></h3>
+                <p class="post-meta">发布于 2026年2月10日 | 📖 阅读时间：8分钟</p>
+                <p>从零开始学习前端开发的最佳路径，包含资源推荐和常见问题解答...</p>
+                <div class="tags">
+                    <span class="tag">前端</span>
+                    <span class="tag">学习</span>
+                    <span class="tag">指南</span>
+                </div>
+                <a href="posts/post2.html" class="read-more">继续阅读 →</a>
+            </div>
+        </section>
+
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>👤 关于我</h3>
+                <p>一名热爱技术的开发者，正在探索 Web 开发的无限可能。</p>
+                <a href="about.html" class="widget-link">了解更多 →</a>
+            </div>
+            
+            <div class="widget">
+                <h3>🏷️ 标签云</h3>
+                <div class="tag-cloud">
+                    <a href="#" class="tag">JavaScript</a>
+                    <a href="#" class="tag">CSS</a>
+                    <a href="#" class="tag">GitHub</a>
+                    <a href="#" class="tag">教程</a>
+                    <a href="#" class="tag">学习</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- 页脚 -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <p>📧 联系我: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>© 2026 我的个人博客 | 由 GitHub Pages 驱动</p>
+        </div>
+    </footer>
 </body>
 </html>
